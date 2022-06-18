@@ -1,6 +1,6 @@
-# Project Name
+# iWarren
 
-Project intro ...
+iWarren is an an algorithmic trading bot that is adept at trading assets in a highly dynamic environment, able to adapt to new data and evolving markets.
 
 ---
 
