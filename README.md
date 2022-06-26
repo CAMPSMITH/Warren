@@ -72,7 +72,7 @@ The rather simple trading algorithm of buying if the close price is equal to or 
 ### Initial SVC Model Results
 The initial SVC model with a 3 month training dataset, 4 day Fast SMA, 100 day Slow SMA, did better.  It had a cumulative return of 152%, which beat the funds actual cumulative return of 134% by almost 20%.
 
-![svc trading vs actual](images/actual_vs_SVM_strategy_cum_returns.png.png)
+![svc trading vs actual](images/actual_vs_SVM_strategy_cum_returns.png)
 
 ### SVC Model Tuning Results
 Several tuning permutations were created by varying training dataset size, fast SMA and slow SMA as described above.  
