@@ -5,7 +5,7 @@ iWarren is an an algorithmic trading bot that leverages algorithmic trading and 
 ---
 
 ## Overview of the Analysis
-In this analysis, several automated trading techniques are evaluated to optimize the return of trading *iShares Currency Hedged MSCI Emerging Markets ETF*. 
+In this analysis, several automated trading techniques are evaluated to enhance the return of trading *iShares Currency Hedged MSCI Emerging Markets ETF*. 
 
 ### Data Preparation
 Historical *iShares Currency Hedged MSCI Emerging Markets ETF* OHLCV data spanning from 2015-01-15 through 2021-01-22 was obtained and read into a dataframe.
