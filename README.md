@@ -79,18 +79,19 @@ Several tuning permutations were created by varying training dataset size, fast 
 
 ![SVC returns for various permutations](images/SVC-tr(6)-sw(3)-lw(60)_returns.png)
 
-After reviewing the results of the various permutations, it was found that the best result for the SVC model was obtained when using the following settings:
+After reviewing the results of the various permutations, it was found that by tuning the SVC model, results could be improved, yielding a cumulative return of 188% when using the following settings:
 
 * 6 months of training data
 * a fast window of 3 days
 * a slow window of 60 days
 
 ### Machine Learning Classifier Results
-A number of machine learning classifiers were evaluated as desdcribed above using the original settings: 3 months of training data, 4 day fast SMA, 100 day slow SMA.
+A number of machine learning classifiers, listed above, were evaluated using the original settings: 3 months of training data, 4 day fast SMA, 100 day slow SMA.
 
 ![SVC returns for various permutations](images/cum_strategy_plots.png)
 
 It was found that of the classifiers that were evaluated, 3 returned better results than the fund's cumulative results.  These were:
+
 * GaussianNB
 * ADABoostClassifier
 * SVC
@@ -102,7 +103,6 @@ Several Obesrvations were made:
 * Several models consistently yielded better returns than the fund's actual returns
 * Tree clasifiers tended to not perform well.
 * For most classifiers, the amount of training data had more impact than changes in the fast SMA and slow SMA
-* Several classifiers consistently exceeded the actual fund returns
 
 The top three of all of the permutations were:
 
