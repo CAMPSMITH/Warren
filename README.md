@@ -50,7 +50,7 @@ Various Models were assessed in the following manner:
 #### Model Tuning / Optimization
 
 In order to optimize the effectiveness of the machine learning models, multiple permutations of the key parameters were evaluated:
-* **Training Dataset Size**: Machine learning models were trained using the earliest 3,6,12, and 18 months of *iShares Currency Hedged MSCI Emerging Markets ETF* data.
+* **Training Dataset Size**: Machine learning models were trained using the earliest 3, 6, 12, and 18 months of *iShares Currency Hedged MSCI Emerging Markets ETF* data.
 * **Fast SMA**: the fast SMA window was calculated averaging 3, 4, and 6 days.
 * **Slow SMA**: the slow SMA window was calculated averaging 60, 100, and 252 days.
 * **classification model**: Multiple classification models were assessed:
@@ -65,7 +65,7 @@ In order to optimize the effectiveness of the machine learning models, multiple 
 ## Results
 
 ### Algorithmic Trading Results
-The rather simple trading algorithm of buying if the close price is equal to or greater than the prior day's close price and selling is the close price is less than the prior day close price did not perform well.  it had a cumulative return of 61.4%, indicating that this strategy would have lost nearly 40%.  By contrast, the cumulative return of *iShares Currency Hedged MSCI Emerging Markets ETF* of was 134%, indicating that simply buying and holding the fund returned about 34%, almost 75% better than the trading algorithm.
+The rather simple trading algorithm of buying if the close price is equal to or greater than the prior day's close price and selling is the close price is less than the prior day close price did not perform well.  It had a cumulative return of 61.4%, indicating that this strategy would have lost nearly 40%.  By contrast, the cumulative return of *iShares Currency Hedged MSCI Emerging Markets ETF* of was 134%, indicating that simply buying and holding the fund returned about 34%, almost 75% better than the trading algorithm.
 
 ![signal trading vs actual](images/actual_vs_Signal_strategy_cum_returns.png)
 
@@ -90,7 +90,7 @@ A number of machine learning classifiers were evaluated as desdcribed above usin
 
 ![SVC returns for various permutations](images/cum_strategy_plots.png)
 
-It was found that of the classifiers that were evaluated, 3 retruned better results than the fund's cmulative results.  These were:
+It was found that of the classifiers that were evaluated, 3 returned better results than the fund's cumulative results.  These were:
 * GaussianNB
 * ADABoostClassifier
 * SVC
@@ -101,8 +101,8 @@ The above models were then tuned using the above permutations, resulting in a to
 Several Obesrvations were made:
 * Several models consistently yielded better returns than the fund's actual returns
 * Tree clasifiers tended to not perform well.
-* for most classifiers, the amount of training data had more impact than changes in the fast SMA and slow SMA
-* Several classifiers conssitently exceeded the actual fund returns
+* For most classifiers, the amount of training data had more impact than changes in the fast SMA and slow SMA
+* Several classifiers consistently exceeded the actual fund returns
 
 The top three of all of the permutations were:
 
@@ -118,7 +118,7 @@ The top three of all of the permutations were:
 
  The *iShares Currency Hedged MSCI Emerging Markets ETF* yielded a cumulative return of 134%.  The algorithmic trading approach evaluated performed much worse than the fund. 
  
- In contrast, several machine learning classifiers consistently provided better returns than the fund's actual return, indicating that actively trading the fund using a machine learning classifier can enhance returns, providing approximately 50% better returns than the fund's actual returns.
+ In contrast, several machine learning classifiers consistently provided better returns than the fund's actual return, indicating that actively trading the fund using a machine learning classifier can enhance returns, potentially providing approximately 50% better returns than the fund's actual returns.
 
 ---
 
@@ -131,12 +131,12 @@ The top three of all of the permutations were:
 * **hvplot** - A set of Python visualization tools used to create compelling, and interactive visualizations.
 * **sklearn** - An open-source Python library offers algorithms and models for building machine models.
 
-
 ---
 
 ## Usage
+Once Jupyter Lab has started in your browser, select the **machine_learning_trading_bot.ipynb** notebook from the **Left Sidebar**.  This is the main analytical notebook.
 
-TBD ...
+![launch Notebook.ipynb](images/start_notebook.png)
 
 ---
 
